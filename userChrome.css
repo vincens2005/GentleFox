@@ -108,6 +108,10 @@ button.small {
 #pageAction-urlbar-side-view_mozilla_org {
 	display: none;
 }
+
+#urlbar-zoom-button {
+	padding-top: 0 !important;
+}
 /*================== NAV BAR ==================*/
 
 toolbar#nav-bar {
