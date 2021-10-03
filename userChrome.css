@@ -112,6 +112,10 @@ button.small {
 #urlbar-zoom-button {
 	padding-top: 0 !important;
 }
+
+.tab-label-container {
+	height: 24px !important;
+}
 /*================== NAV BAR ==================*/
 
 toolbar#nav-bar {
