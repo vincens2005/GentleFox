@@ -9,9 +9,10 @@
   --urlbar-container-height: 35px !important;
   --urlbar-icon-padding: 4px;
   --tab-border-radius: 4px !important;
+  --doc-height-px: 150px !important;
 }
 
-*:not(.tabbrowser-tab):not(panel *):not(panel) {
+*:not(.tabbrowser-tab):not(panel *):not(panel):not([subdialog]) {
 	transition: 0.1s !important;
 }
 /*================== MAIN HEADER ==================*/
@@ -113,9 +114,10 @@ button.small {
 	padding-top: 0 !important;
 }
 
-.tab-label-container {
+stack:not([soundplaying=true]) ~ .tab-label-container {
 	height: 24px !important;
 }
+
 /*================== NAV BAR ==================*/
 
 toolbar#nav-bar {
@@ -155,11 +157,11 @@ box.toolbarbutton-animatable-box {
 }
 
 .tabbrowser-tab[selected="true"] .tab-label:-moz-lwtheme-brighttext {
-	color:white !important;
+	color: white !important;
 }
 
 .tabbrowser-tab .tab-label:-moz-lwtheme-brighttext {
-	color:rgba(255,255,255,0.7) !important;
+	color:rgba(255,255,255,0.9) !important;
 }
 
 .tabbrowser-tab[selected="true"] .tab-background:-moz-lwtheme-brighttext {
