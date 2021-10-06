@@ -114,7 +114,7 @@ button.small {
 	padding-top: 0 !important;
 }
 
-stack:not([soundplaying=true]) ~ .tab-label-container {
+stack:not([soundplaying=true]):not([muted=true]) ~ .tab-label-container {
 	height: 24px !important;
 }
 
