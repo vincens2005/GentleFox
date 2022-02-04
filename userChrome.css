@@ -8,13 +8,9 @@
   --toolbarbutton-outer-padding: 5px !important;
   --urlbar-container-height: 35px !important;
   --urlbar-icon-padding: 4px;
-  --tab-border-radius: 4px !important;
-  --doc-height-px: 150px !important;
+	--doc-height-px: 150px !important;
 }
 
-*:not(.tabbrowser-tab):not(panel *):not(panel):not([subdialog]) {
-	transition: 0.1s !important;
-}
 /*================== MAIN HEADER ==================*/
 
 toolbox#navigator-toolbox {
@@ -53,27 +49,15 @@ toolbox#navigator-toolbox {
 	height: 0px !important;
 }
 
-.tab-close-button {
-	border-radius: 4px !important;
-}
 
 .tab-close-button:hover {
 	fill-opacity: 4 !important;
-}
-
-/*================== NEW TAB BUTTON ==================*/
-
-toolbar #tabs-newtab-button:not([disabled="true"]):not([checked]):not([open]):not(:active)>.toolbarbutton-icon,
-toolbar #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :hover:active)>.toolbarbutton-icon,
-toolbar #tabs-newtab-button:not([disabled="true"]):-moz-any([open], [checked], :active)>.toolbarbutton-icon {
-	border-radius: 4px !important;
 }
 
 /*================== SEARCH BAR ==================*/
 
 searchbar#searchbar {
 	margin-top: 4px !important;
-	border-radius: 4px !important;
 	border: 1 !important;
 	box-shadow: none !important;
 }
@@ -126,11 +110,6 @@ toolbar#nav-bar {
 	height: 37px !important;
 }
 
-toolbarbutton, .toolbarbutton-icon, #fxa-avatar-image {
-	border-radius: 4px !important;
-	
-}
-
 #nav-bar-customization-target {
 	padding-bottom: 2px;
 }
@@ -143,12 +122,6 @@ toolbarbutton, .toolbarbutton-icon, #fxa-avatar-image {
 #urlbar>#urlbar-input-container {
 	border-radius: 4px !important;
 }
-	
-
-#urlbar:not([focused="true"])>#urlbar-background,
-#urlbar>#urlbar-input-container {
-	border-radius: 4px !important;
-}
 
 /*Fixes the funky Reload/Stop button*/
 
@@ -156,14 +129,3 @@ box.toolbarbutton-animatable-box {
 	margin-top: -2px !important;
 }
 
-.tabbrowser-tab[selected="true"] .tab-label:-moz-lwtheme-brighttext {
-	color: white !important;
-}
-
-.tabbrowser-tab .tab-label:-moz-lwtheme-brighttext {
-	color:rgba(255,255,255,0.9) !important;
-}
-
-.tabbrowser-tab[selected="true"] .tab-background:-moz-lwtheme-brighttext {
-	box-shadow: inset 0em -4em 0em var(--toolbar-bgcolor) !important;
-}
